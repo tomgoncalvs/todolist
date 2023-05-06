@@ -93,6 +93,7 @@ header > div.container {
 
 .form-task {
   margin-top: var(--spacing-large);
+  
 }
 
 .form-task-label {
@@ -100,7 +101,7 @@ header > div.container {
 }
 
 .form-task-input {
- height: 2.7vh;
+  padding: 5px;
 }
 
 i {
