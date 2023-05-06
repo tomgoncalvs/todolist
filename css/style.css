@@ -34,7 +34,19 @@
 body {
   font-family: 'Open Sans', Arial, Helvetica, 'Ubuntu', sans-serif;
   font-size: 16px;
+  
+}
+
+.container-corpo {
   background-color: var(--color-interface-light);
+  border-left: 1px solid var(--color-interface-dark);
+  border-top: 1px solid var(--color-interface-dark);
+  border-right: 1px solid var(--color-interface-dark);
+  padding: 0 15px 15px 15px;
+}
+.container-corpo-tarefas {
+  background-color: var(--color-interface-light);
+  border-right: 1px solid var(--color-interface-dark);
 }
 
 h1, 
@@ -47,8 +59,11 @@ h6 {
 }
 
 header {
-  padding-top: var(--spacing-medium);
-  padding-bottom: var(--spacing-medium);
+  background-color: var(--color-interface-light);
+  border-left: 1px solid var(--color-interface-dark);
+  border-top: 1px solid var(--color-interface-dark);
+  border-right: 1px solid var(--color-interface-dark);
+  padding: 10px;
 }
 
 .header-item {
@@ -68,7 +83,7 @@ header > div.container {
 
 .title {
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -3px;
   font-weight: 400;
   font-size: 3.9vh;
   color: var(--color-text-light);
@@ -82,7 +97,7 @@ header > div.container {
 }
 
 .container {
-  width: 94%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -114,8 +129,8 @@ body {
 }
 
 .formulario-tarefas input {
-  padding: 10px;
-  border: 1px solid grey;
+  padding: 8px;
+  border: 1px solid var(--color-text-dark);
   border-radius: 5px;
   width: 100%;
 }
@@ -123,10 +138,59 @@ body {
 .formulario-tarefas button {
   background-color: var(--color-brand-secondary);
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 8px 20px;
   border-radius: 5px;
   border: none;
   margin-left: 3px;
 }
 
+.container-inferior {
+background-color: var(--color-common-light);
+border: 1px solid var(--color-interface-dark);
+border-radius: 0 40px 0 0;
+height: 50vh;
+margin: 0px;
+}
 
+.container-tarefas {
+  margin-top: 30px;
+  
+}
+
+.tarefa-adicionada {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.tarefa-adicionada p {
+  margin-left: 5px;
+  width: 80%;
+}
+
+.tarefa-adicionada button {
+  color: var(--color-text-dark);
+  padding: 0 5px;
+  margin-right: 0px;
+}
+
+.tarefa-adicionada input {
+  all:unset;
+  border: 1px solid black;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
+.tarefa-concluida {
+  text-decoration: line-through;
+}
+
+.tarefa-adicionada input {
+  border: 1px solid var(--color-text-dark);
+  border-radius: 2px;
+}
+
+.tarefa-adicionada input:checked {
+  background-color: var(--color-text-dark);
+}

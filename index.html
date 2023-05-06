@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="">
     <header>
       <div class="container header-item">
         <button class="button">
@@ -26,7 +27,7 @@
         <img src="./assets/albert-einstein.jpg" alt="Imagem de Albert Einstein" class="avatar"/>
       </div>
     </header>
-    <section>
+    <section class="container-corpo">
       <div class="container">
         <h1 class="title">Minhas tarefas</h1>
         <p class="subtitle">Ewerton Goncalves</p>
@@ -35,18 +36,19 @@
         <form action="" class="formulario-tarefas">
           
           <input id="add" type="text">
-          <button class="botao-add">+</button>
+          <button class="botao-add"><i class="material-symbols-outlined"> add </i></button>
         </form>
       </div>
 
       </div>
     </section>
-    <section>
-      <div class="container">
-        <div>
-          <input type="checkbox" name="" id="" />
-          <p></p>
-          <p></p>
+    <section class="container-corpo-tarefas">
+      <div class="container-inferior">
+        
+        <div class="container-tarefas">
+        <div class="tarefa-adicionada">
+          <input class="tarefa-concluida" type="checkbox" name="" id="" checked/>
+          <p class="tarefa-concluida">Escolher um novo carro</p>
           <button class="button">
             <i class="material-symbols-outlined"> edit </i>
           </button>
@@ -54,9 +56,9 @@
             <i class="material-symbols-outlined"> delete </i>
           </button>
         </div>
-        <div>
+        <div class="tarefa-adicionada">
           <input type="checkbox" name="" id="" />
-          <p></p>
+          <p>Comparar um novo carro</p>
           <button class="button">
             <i class="material-symbols-outlined"> edit </i>
           </button>
@@ -65,7 +67,9 @@
           </button>
         </div>
       </div>
+      </div>
     </section>
+  </div>
     <script src="./js/script.js"></script>
   </body>
 </html>
