@@ -67,15 +67,17 @@ header > div.container {
 }
 
 .title {
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: -1px;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 3.9vh;
   color: var(--color-text-light);
 }
 
 .subtitle {
   line-height: 1.2;
   font-weight: 700;
+  font-size: 1.6vh;
   color: var(--color-brand-primary);
 }
 
@@ -91,29 +93,40 @@ header > div.container {
   border-radius: 50%;
 }
 
-.form-task {
-  margin-top: var(--spacing-large);
-  
+body {
+  max-width: 45vw;
+  margin: auto;
+  padding: 25px;
 }
 
-.form-task-label {
-  display: block;
+.principal-container {
+  margin: 20px 0;
 }
 
-.form-task-input {
-  padding: 5px;
+.principal-container label {
+  color: var(--color-text-dark);
+  font-weight: bold;
 }
 
-i {
+.formulario-tarefas {
   display: flex;
-  margin: auto 0;
+  justify-content: space-between;
 }
 
-.form-task-button {
-  background-color: var(--color-brand-secondary);
-  color: white;
-  padding: 0px 8px 5px 8px;
-  border: var(--color-feedback-error) 1px solid;
-  border-radius: 4px;
+.formulario-tarefas input {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 100%;
 }
+
+.formulario-tarefas button {
+  background-color: var(--color-brand-secondary);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 3px;
+}
+
 
